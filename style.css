@@ -1,0 +1,463 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,html{
+    
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+
+
+
+
+
+
+
+header{
+    
+    
+    background-color:#1e1b4b;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 100px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+
+  
+}
+
+.partePrincipal{
+
+    background-color: #f8fafc;
+    margin-top: 100px;
+    }
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+nav ul li {
+    
+    
+    display: inline; /* Para colocar os itens na mesma linha */
+     /* Espaço entre os itens */
+     
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove a margem do último item */
+}
+
+
+
+nav li a {
+    
+    color: #f8fafc;
+    margin-right: 50px;
+}
+
+header img{
+    height: 195px;
+    width: 240px;
+    object-fit: contain;
+    
+    
+    
+    
+}
+
+
+nav li a:hover {
+    transition-duration: 0.4s;
+    color: #7c3aed;
+
+    
+    
+}
+
+.sectionPrincipal{
+    display: flex;
+    
+    align-items: center;
+    margin: 50px;
+    height: 80vh;
+    justify-content: center;
+    gap: 400px;
+    
+    
+    
+    
+}
+.textSection h1{
+    max-width: 650px;
+    color:#1e1b4b;
+    font-weight: 700;
+}
+
+.textSection{
+    max-width: 650px;
+    color:#302c68;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-weight: 500;
+    
+}
+
+.botao {
+    
+    background-color: #7c3aed; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    color: white; /* Cor do texto */
+    padding: 15px 32px; /* Espaçamento interno (topo/baixo) e (esquerda/direita) */
+    text-align: center; /* Alinha o texto ao centro */
+    text-decoration: none; /* Remove a decoração do texto */
+    display: inline-block; /* Exibe como um bloco em linha */
+    font-size: 16px; /* Tamanho do texto */
+    margin: 4px 2px; /* Margem externa */
+    cursor: pointer; /* Cursor ao passar sobre o botão */
+    border-radius: 12px; /* Borda arredondada */
+    transition-duration: 0.4s; /* Duração da transição */
+    font-weight: 600;
+    margin-top: 30px;
+  }
+
+  .botao a{
+    color:#f8fafc;
+  }
+  
+  .botao:hover {
+    transform: scale(1.2); /* Cor de fundo ao passar o mouse */
+     /* Cor do texto ao passar o mouse */
+  }
+
+.imagemSection img{
+height: 300px;
+width: 305px;
+border-radius: 50%;
+background-color: #7c3aed;
+
+}
+
+.banner-carousel {
+    background-color: #7c3aed;
+    padding-bottom: 5px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+  }
+  
+  .banner-slides {
+    display: flex;
+    transition: transform 1s ease;
+  }
+  
+  .banner-slide {
+    flex: 0 0 100%;
+  }
+  
+  .banner-slide img {
+   width:100%;
+   height:95%;
+   
+   
+  }
+
+
+
+#servicos1{
+    background: linear-gradient(to top, #302c68 0%, #7c3aed 100%);
+
+    height: 100%;
+    z-index: -1;
+    padding-top: 1px;
+    padding-bottom: 500px;
+    
+    
+   
+  }
+
+.tiposServicos{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    justify-content: center;
+    gap: 50px;
+}
+
+  .servicosQuadrado{
+
+    display: flex;
+    
+    
+    height: 400px;
+    width: 100%;
+    
+    color: #f8fafc;
+    align-items: center;
+    gap: 100px;
+
+   
+  }
+
+  .servicosQuadrado p{
+
+   color: #f8fafc;
+   background-color: #1e1b4b;
+   border-radius: 5px;
+   padding: 10px;
+   margin-right: 50px;
+   
+   
+  }
+
+  .servicosQuadrado img{
+    background-color: #1e1b4b;
+
+    color: #f8fafc;
+    
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+    
+   }
+
+   .servicosQuadrado img:hover{
+    transform: translateY(-20px);
+    cursor: pointer;
+    
+   }
+
+  
+ 
+
+  .imagensServicos{
+    height: 400px;
+    width: 600px;
+    object-fit:cover;    
+  }
+
+
+
+
+
+  .tiposServicos h2{
+    color: #f8fafc;
+  }
+
+
+
+  footer{
+    
+    
+   
+    background-color:#09090b;
+    align-items: center;
+    text-align: center;
+    color: #f8fafc;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    
+  }
+
+  footer ul{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    gap: 30px;
+   
+  }
+
+
+  footer img{
+    height: 40px;
+    width: 40px;
+    transition: 0.2s ease-in-out;
+
+  }
+
+  #imageminsta{
+    height: 38px;
+    width: 38px;
+  }
+
+  footer img:hover{
+    transform: scale(1.2);
+  }
+
+
+
+  .marca-dagua {
+    position: fixed; /* Fixa a marca d'água na página */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0); /* Cor de fundo semi-transparente */
+    z-index: 1000; /* Garante que a marca d'água esteja acima do conteúdo */
+    pointer-events: none; /* Faz com que a marca d'água não receba eventos de mouse */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.2); /* Cor do texto semi-transparente */
+    font-family: Arial, sans-serif;
+    transform: rotate(-45deg); /* Rotação da marca d'água */
+}
+
+
+
+@media screen and (max-width:1068px) {
+
+    .imagensServicos{
+        height: 200px;
+        width: 400px;
+        object-fit:cover;    
+      }
+    
+
+    
+    
+}
+
+
+@media screen and (max-width:938px) {
+
+    
+       nav li a{
+        display: flex;
+        flex-direction: column;
+        
+       }
+
+       header{
+        display: none;
+
+       }
+       
+       
+
+       .servicosQuadrado{
+        display: flex;
+        flex-direction: column;
+
+        
+        
+
+
+        
+       }
+
+
+body{
+    background-color: #f8fafc;
+}
+       .sectionPrincipal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        
+        
+        
+       }
+       .sectionPrincipal img{
+        display: none;
+        
+       
+       }
+        
+
+    
+    
+}
+
+
+@media screen and (max-width:723px) {
+
+    .servicosQuadrado{
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .servicosQuadrado img{
+        height: 280px;
+        width: 285px;
+        
+    }
+
+    
+    
+}
+
+@media screen and (max-width:524px) {
+
+    
+.tiposServicos h2{
+    
+    margin-top: 20px;
+}
+
+.servicosQuadrado{
+    justify-content: space-around;
+    
+}
+    
+    
+}
+
+@media screen and (max-width:516px) {
+    .servicosQuadrado p {
+        font-size: small;
+    }
+
+    .tiposServicos h2{
+    
+        font-size: medium;
+    }
+
+
+    footer{
+        font-size: small;
+    }
+   
+        
+        
+    }
+
+
+
+
+
+  
+ 
+
+  
